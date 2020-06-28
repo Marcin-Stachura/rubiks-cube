@@ -1,7 +1,7 @@
 console.log("Siemanko!");
 
-let tableButton = document.querySelector(".tableButton");
-let tableBody = document.querySelector(".tableBody");
+const tableButton = document.querySelector(".tableButton");
+const tableBody = document.querySelector(".tableBody");
 
 function tableShown() {
   tableButton.innerText = "Porównanie opisanych wyżej metod - ukryj"
