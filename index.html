@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kostka Rubika</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/link.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body id="metody-układania" class="body">
+
+
+
+    <nav>
+        <ul class="navigation">
+            <li class="navigation__listItem"><a class="link" href="#klasyczne-metody">Przejdź do klasycznych metod</a>
+            </li>
+            <li class="navigation__listItem"> <a class="link" href="#metody-BLD">Przejdź do metod BLD</a></li>
+            <li class="navigation__listItem"> <a class="link" href="#metody-FMC">Przejdź do metod FMC</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="header">Metody układania <img width=40 src="images/kostka.jpg" alt=""> Kostki Rubika
+            <img width=40 src="images/kostka.jpg" alt=""></h1>
+    </header>
+
+    <main>
+        <section id="klasyczne-metody" class="section">
+            <h2 class="section__header">Klasyczne metody</h2>
+            <h3 class="section__topicTitle">LBL</h3>
+            <p>Podstawowa metoda układania kostki. Jej największą zaletą jest jej <strong>prostota</strong>, przez
+                co
+                jest
+                najczęściej wybieraną
+                metodą do nauki układania Kostki Rubika <em>dla nowych osób</em>.<br> Zależnie od wersji, może
+                wymagać
+                nauki
+                ok.
+                7
+                prostych <i>algorytmów</i>.</p>
+            <h3 class="section__topicTitle">Fridrich (CFOP)</h3>
+            <p>Jest to najbardziej popularna metoda używana wśród speedcuberów. Jest ona <strong>naturalnym
+                    rozwinięciem
+                    metody
+                    LBL</strong>, dzięki czemu jest względnie prosta do zrozumienia, jednocześnie dając duże
+                możliwości.
+                Ma
+                znacznie niższą niż
+                LBL średnią liczbę ruchów potrzebnych do ułożenia kostki (rzędu 60-65 ruchów), większość przypadków
+                jest
+                prosta
+                do rozpoznania, a stosowane algorytmy są wygodne pod tzw. <i>fingertricki</i>.<br> Kolejność
+                rozwiązywania
+                kostki w tej metodzie to: krzyż (cross) - pierwsze 2 warstwy (F2L) - orientacja ostatniej warstwy
+                (OLL)
+                -
+                permutacja ostatniej warstwy (PLL).</p>
+            <h3 class="section__topicTitle">Roux </h3>
+            <p>Mniej popularna metoda niż Fridrich, lecz silnie z nią konkurująca i przez większość speedcuberów
+                uważana
+                za
+                metodę z <b>równie wysokim potencjałem</b>. Polega na intuicyjnym ułożeniu bloku 1x2x3 (FB), drugim
+                bloku
+                1x2x3
+                (SB),
+                rogów ostatniej warstwy (CMLL), oraz 6 ostatnich krawędzi w 3 podetapach (4a, 4b, 4c).</p>
+            <h3 class="section__topicTitle">ZZ</h3>
+            <p>Mało popularna metoda, polegająca na zrobieniu tzw. EOline (orientacja krawędzi + ułożenie krawędzi
+                FD
+                oraz
+                BD) -
+                F2L - ZBLL.</p>
+            <h3 class="section__topicTitle">Petrus</h3>
+            <p>2x3x2 - 2x3x3 - EO - F2L - LL.</p>
+
+            <button class="tableButton">Porównanie opisanych wyżej metod - pokaż</button>
+
+            <div class="tableContainer">
+                <table class="tableBody">
+                    <caption class="tableCaption">Porównanie metod</caption>
+                    <tr class="tableRow">
+                        <th class="tableHeader tableCell" scope="col">Metoda</th>
+                        <th class="tableHeader tableCell" scope="col">Liczba używanych algorytmów</th>
+                        <th class="tableHeader tableCell" scope="col">Średnia liczba ruchów w ułożeniu
+                        </th>
+                        <th class="tableHeader tableCell" scope="col">Średnia liczba rotacji w
+                            ułożeniu</th>
+                        <th class="tableHeader tableCell" scope="col">Możliwości rozszerzenia metody
+                        </th>
+                        <th class="tableHeader tableCell" scope="col">Uwagi</th>
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableHeader tableCell" scope="row">LBL</th>
+                        <td class="tableCell ">ok. 7</td>
+                        <td class="tableCell ">ok. 120</td>
+                        <td class="tableCell ">ok. 6</td>
+                        <td class="tableCell ">średnie - metoda naturalnie rozwija się do metody Fridrich
+                        </td>
+                        <td class="tableCell ">metoda o niskim potencjale speedcubingowym, lecz bardzo
+                            prosta</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableHeader tableCell" scope="row">Fridrich</th>
+                        <td class="tableCell ">ok. 42 (F2L) + 57 (OLL) + 21 (PLL)</td>
+                        <td class="tableCell ">60-65</td>
+                        <td class="tableCell ">2</td>
+                        <td class="tableCell ">duże (wymuszanie EO, Winter Wariation, COLL, ZBLL itp.)
+                        </td>
+                        <td class="tableCell ">metoda pozwala na osiąganie świetnych rezultatów dzięki
+                            względnej
+                            prostocie
+                            oraz wysokiej
+                            ergonomii ruchów</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableHeader tableCell" scope="row">Roux</th>
+                        <td class="tableCell ">42 (CMLL)</td>
+                        <td class="tableCell ">45-50</td>
+                        <td class="tableCell ">brak</td>
+                        <td class="tableCell ">średnie (OLLCP, EOLR itp.)</td>
+                        <td class="tableCell ">znacznie mniejsza średnia liczba ruchów względem
+                            Fridricha, kosztem
+                            ergonomii
+                            i braku
+                            algorytmiczności metody</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableHeader tableCell" scope="row">ZZ</th>
+                        <td class="tableCell ">ok. 20 (F2L) + 28 (OCLL+PLL) lub 169 (ZZLL)</td>
+                        <td class="tableCell ">ok. 55</td>
+                        <td class="tableCell ">brak</td>
+                        <td class="tableCell ">średnie (ZZLL, ZBLL)</td>
+                        <td class="tableCell ">Mało popularna metoda, przez większość uznawana za gorszą
+                            niż Fridrich
+                            oraz
+                            Roux</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableHeader tableCell" scope="row">Petrus</th>
+                        <td class="tableCell ">28 (OCLL+PLL) lub inna, zależnie od wersji</td>
+                        <td class="tableCell ">50-55</td>
+                        <td class="tableCell ">0-2</td>
+                        <td class="tableCell ">niskie (blockbuilding, ZBLL)</td>
+                        <td class="tableCell ">metoda praktycznie zapomniana w kontekście speedcubingu
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3 class="section__topicTitle"> <span class="section__topicTitle--other">Inne</span></h3>
+            <p>Corners first itp.</p>
+            <p><a class="link" href="#metody-układania">Powrót</a></p>
+        </section>
+
+        <section id="metody-BLD" class="section">
+            <h2 class="section__header">Metody używane do układania Kostki Rubika z zamkniętymi oczami</h2>
+            <h3 class="section__topicTitle">Old Pochmann</h3>
+            <p>Podstawowa metoda układania z zamkniętymi oczami.</p>
+            <h3 class="section__topicTitle">M2/R2</h3>
+            <p>Metoda dla średniozaawansowanych.</p>
+            <h3 class="section__topicTitle">TuRBo</h3>
+            <p>Inna metoda dla średniozaawansowanych.</p>
+            <h3 class="section__topicTitle">3style</h3>
+            <p>Najszybsza metoda.</p>
+            <h3 class="section__topicTitle"> <span class="section__topicTitle--other">Inne</span></h3>
+            <p>Np. 3OP.</p>
+            <p><a class="link" href="#metody-układania">Powrót</a></p>
+        </section>
+
+        <section id="metody-FMC" class="section">
+            <h2 class="section__header">Techniki używane do układania Kostki Rubika w najmniejszej liczbie
+                ruchów</h2>
+            <h3 class="section__topicTitle">Blockbuilding</h3>
+            <p>Podstawowa technika.</p>
+            <h3 class="section__topicTitle">Edge Orientation (EO)</h3>
+            <p>Kolejna prosta technika.</p>
+            <h3 class="section__topicTitle">Domino</h3>
+            <p>Dominko-gówninko.</p>
+            <h3 class="section__topicTitle">Komutatory</h3>
+            <p>Dobre rzeczy, zawsze przydatne.</p>
+            <h3 class="section__topicTitle"> <span class="section__topicTitle--other">Inne</span></h3>
+            <p>Jakieś śmieszne HTRy itp.</p>
+            <p><a class="link" href="#metody-układania">Powrót</a></p>
+        </section>
+    </main>
+    <footer class="footer">
+    </footer>
+
+</body>
+
+</html>

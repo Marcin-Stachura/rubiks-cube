@@ -1,0 +1,42 @@
+.tableContainer {
+    overflow-x: auto;
+}
+
+.tableBody {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.tableRow:hover {
+    background-color: hsl(0, 100%, 96%);
+}
+
+.tableCaption {
+    caption-side: bottom;
+    color: hsla(0, 59%, 41%, 0.959);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tableHeader {
+    color: hsla(0, 59%, 41%, 0.959);
+    background-color: hsl(0, 100%, 90%);
+}
+
+.tableCell {
+    border: 2px solid #aaa;
+    padding: 5px;
+}
+
+.tableButton {
+    width: 330px;
+    font-size: 90%;
+    display: block;
+    padding: 10px 20px;
+    background-color: hsl(0, 100%, 90%);
+    border: none;
+    border-radius: 5px;
+    margin: 5px auto;
+}

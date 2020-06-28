@@ -1,0 +1,15 @@
+.link {
+    color: hsl(214, 100%, 48%);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.link:visited {
+    color: hsl(214, 100%, 32%);
+}
+
+.link:hover {
+    color: hsl(214, 100%, 60%);
+    border-bottom: 1px solid currentColor;
+    outline: none;
+}

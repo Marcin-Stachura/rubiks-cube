@@ -1,0 +1,11 @@
+.header {
+    max-width: 1000px;
+    width: 95%;
+    margin: 20px auto;
+    color: hsla(0, 59%, 41%, 0.959);
+    text-shadow: 4px 3px 10px #ffb8b8;
+    padding: 40px;
+    border-top: 2px solid hsla(0, 59%, 41%, 0.959);
+    border-bottom: 2px solid hsla(0, 59%, 41%, 0.959);
+    text-align: center;
+}
