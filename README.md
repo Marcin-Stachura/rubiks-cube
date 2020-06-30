@@ -6,7 +6,7 @@ https://marcin-stachura.github.io/rubiks-cube/
 
 ## Description
 
-<img src="images\kostka.jpg" width="200" alt="kostka">
+<img src="images\cube.png" width="200" alt="cube">
 
 Very simple site briefly describing most popular methods for speedsolving the Rubik's Cube. Includes techniques for standard solving as well as blindfolded (BLD) and Fewest Moves (FMC).
 
